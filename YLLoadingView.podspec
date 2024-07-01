@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # 资源文件夹 => 不知道为什么不可用
   # s.source_files  = "Resource/*.swift"
   # 实际资源文件夹
-  s.resources = "Resource/"
+  s.resources = "Resource/*.swift"
 
   # 依赖库
   s.framework  = "UIKit"
