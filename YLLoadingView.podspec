@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # 名称
   s.name         = "YLLoadingView"
   # 版本
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   # 简介
   s.summary      = "一个简单的加载框控件，可自定义程度高"
   # 主页
@@ -17,8 +17,12 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   # 资源地址
   s.source       = { :git => "https://github.com/StudentLinn/YLLoadingView.git", :tag => "#{s.version}" }
-  # 资源文件夹
-  s.source_files  = "Resource/*.swift"
+
+  # 资源文件夹 => 不知道为什么不可用
+  # s.source_files  = "Resource/*.swift"
+  # 实际资源文件夹
+  s.resources = "Resource/"
+
   # 依赖库
   s.framework  = "UIKit"
   s.dependency "SnapKit"
