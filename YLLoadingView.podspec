@@ -1,10 +1,8 @@
-@version = "0.0.1"
-
 Pod::Spec.new do |s|
   # 名称
   s.name         = "YLLoadingView"
   # 版本
-  s.version      = @version
+  s.version      = "0.0.1"
   # 简介
   s.summary      = "一个简单的加载框控件，可自定义程度高"
   # 主页
@@ -12,9 +10,11 @@ Pod::Spec.new do |s|
   # 类型
   s.license      = { :type => "MIT", :file => "LICENSE" }
   # 作者
-  s.author             = { "lin" => "792007074@qq.com" }
+  s.author       = { "lin" => "792007074@qq.com" }
   # 限定ios
   s.platform     = :ios, "12.0"
+  # 指定swift
+  s.swift_version = '5.0'
   # 资源地址
   s.source       = { :git => "https://github.com/StudentLinn/YLLoadingView.git", :tag => "#{s.version}" }
   # 资源文件夹
