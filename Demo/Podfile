@@ -5,7 +5,7 @@ target 'Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   # 布局
-  pod 'SnapKit', '~> 5.6.0'
+  pod 'SnapKit'
 
   # Pods for Demo
 
