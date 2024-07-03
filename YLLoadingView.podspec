@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 名称
 s.name         = 'YLLoadingView'
 # 版本号
-s.version      = '0.0.1'
+s.version      = '0.0.2'
 # 标题
 s.summary      = '一个简单的加载框控件，可自定义程度高'
 # 主页

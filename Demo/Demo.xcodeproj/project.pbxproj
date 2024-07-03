@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2639748D696BC56FD113DFD4 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		5E70B391BAB0BFD775E6B43F /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CF44082BE0C8000075B2BE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CF440B2BE0C8000075B2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +28,6 @@
 		84CF443C2BE0CE300075B2BE /* YLLoadingPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingPopView.swift; sourceTree = "<group>"; };
 		84CF44402BE0CE7E0075B2BE /* YLLoadingPopViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingPopViewConfig.swift; sourceTree = "<group>"; };
 		84CF44422BE0D1680075B2BE /* YLLoadingViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingViewManager.swift; sourceTree = "<group>"; };
-		BB6FE1FB776FA9EDB19A72B9 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +50,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6ABBF8FCAB58B83DF9BA24FD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BB6FE1FB776FA9EDB19A72B9 /* Pods-Demo.debug.xcconfig */,
-				2639748D696BC56FD113DFD4 /* Pods-Demo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		84CF43FF2BE0C8000075B2BE = {
 			isa = PBXGroup;
 			children = (
 				84CF440A2BE0C8000075B2BE /* Demo */,
 				84CF44092BE0C8000075B2BE /* Products */,
-				6ABBF8FCAB58B83DF9BA24FD /* Pods */,
 				16BB6A045CFAC183BA8E3696 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -359,7 +347,6 @@
 		};
 		84CF44332BE0C8020075B2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB6FE1FB776FA9EDB19A72B9 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,7 +381,6 @@
 		};
 		84CF44342BE0C8020075B2BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2639748D696BC56FD113DFD4 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
