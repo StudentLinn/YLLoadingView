@@ -16,7 +16,7 @@ s.platform     = :ios, '12.0'
 # 资源地址
 s.source       = {:git => 'https://github.com/StudentLinn/YLLoadingView.git', :tag => s.version}
 # 资源文件
-s.source_files = 'YLLoadingView/**'
+s.source_files = 'YLLoadingView/*.swift'
 # 自动引用计数器
 s.requires_arc = true
 # swift版本
