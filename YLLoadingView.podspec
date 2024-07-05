@@ -10,13 +10,14 @@ s.homepage     = 'https://github.com/StudentLinn/YLLoadingView'
 # 协议类型
 s.license      = 'MIT'
 # 作者
-s.authors      = {'StudentLinn' => '792007074@qq.com'}
+s.authors      = {'lin' => '792007074@qq.com'}
 # 版本号
 s.platform     = :ios, '12.0'
+s.ios.deployment_target = "12.0"
 # 资源地址
 s.source       = {:git => 'https://github.com/StudentLinn/YLLoadingView.git', :tag => s.version}
 # 资源文件
-s.source_files = 'YLLoadingView/*.swift'
+s.source_files = 'Source/*.swift'
 # 自动引用计数器
 s.requires_arc = true
 # swift版本
