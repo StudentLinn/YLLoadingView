@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         ylPopManager.setConfig { result in
             // 底部背景色
             result.backViewMaskColor = .blue
-            // 蒙层
-            result.backViewHaveMask = false
+            // 是否禁止点击
+//            result.backViewStopClick = true
             // 有图片时最小框
             result.popViewHaveImageMinSize = .init(width: 300, height: 300)
             // 设置加载图片

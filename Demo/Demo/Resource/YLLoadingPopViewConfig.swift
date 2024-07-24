@@ -15,8 +15,8 @@ public struct YLLoadingPopViewConfig {
     }
     
     //MARK: - 蒙层以及背景等设置
-    /// 是否含有蒙层 => (默认为有)
-    public var backViewHaveMask : Bool = true
+    /// 是否禁止点击
+    public var backViewStopClick : Bool = true
     
     /// 蒙层颜色 => (默认0.5透明度黑色)
     public var backViewMaskColor : UIColor = .black.withAlphaComponent(0.5)
@@ -34,7 +34,7 @@ public struct YLLoadingPopViewConfig {
     public var popViewSizeEqual : CGSize?
     
     /// 弹窗背景色 =>  (默认0.8透明度黑色)
-    public var popViewBackGroundColor : UIColor = .black.withAlphaComponent(0.8)
+    public var popViewBackgroundColor : UIColor = .black.withAlphaComponent(0.8)
     
     /// 弹窗圆角 => (默认8)
     public var popViewCornerRadius : CGFloat = 8

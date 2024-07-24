@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A548BBAE134C6B635198344 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5E70B391BAB0BFD775E6B43F /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CF44082BE0C8000075B2BE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CF440B2BE0C8000075B2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		84CF443C2BE0CE300075B2BE /* YLLoadingPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingPopView.swift; sourceTree = "<group>"; };
 		84CF44402BE0CE7E0075B2BE /* YLLoadingPopViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingPopViewConfig.swift; sourceTree = "<group>"; };
 		84CF44422BE0D1680075B2BE /* YLLoadingViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoadingViewManager.swift; sourceTree = "<group>"; };
+		F77663A0AB09CA97584A30E0 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				84CF440A2BE0C8000075B2BE /* Demo */,
 				84CF44092BE0C8000075B2BE /* Products */,
 				16BB6A045CFAC183BA8E3696 /* Frameworks */,
+				FF405C9A1EC7BB80BE82C3CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,16 @@
 				84CF44422BE0D1680075B2BE /* YLLoadingViewManager.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		FF405C9A1EC7BB80BE82C3CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A548BBAE134C6B635198344 /* Pods-Demo.debug.xcconfig */,
+				F77663A0AB09CA97584A30E0 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,12 +360,13 @@
 		};
 		84CF44332BE0C8020075B2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A548BBAE134C6B635198344 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFRHS2R5L6;
+				DEVELOPMENT_TEAM = 5K8GCWGTQ9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -367,7 +381,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.David.remote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yskj.AppLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -381,12 +395,13 @@
 		};
 		84CF44342BE0C8020075B2BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77663A0AB09CA97584A30E0 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFRHS2R5L6;
+				DEVELOPMENT_TEAM = 5K8GCWGTQ9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -399,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.David.remote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yskj.AppLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

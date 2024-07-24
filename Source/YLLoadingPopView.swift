@@ -48,7 +48,7 @@ public class YLLoadingPopView : UIView {
     public lazy var popCenterYView : UIView = {
         let view = UIView()
         // 设置背景色
-        view.backgroundColor = config.popViewBackGroundColor
+        view.backgroundColor = config.popViewBackgroundColor
         // 设置圆角
         view.layer.cornerRadius = config.popViewCornerRadius
         // 截取
@@ -114,7 +114,7 @@ public class YLLoadingPopView : UIView {
         popCenterYView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
-        isUserInteractionEnabled = !config.backViewHaveMask
+        isUserInteractionEnabled = config.backViewStopClick
     }
     
     required init?(coder: NSCoder) {
@@ -131,8 +131,8 @@ extension YLLoadingPopView {
             backgroundColor = config.backViewMaskColor
         }
         // 如果弹窗框背景色修改了
-        if popCenterYView.backgroundColor != config.popViewBackGroundColor {
-            popCenterYView.backgroundColor = config.popViewBackGroundColor
+        if popCenterYView.backgroundColor != config.popViewBackgroundColor {
+            popCenterYView.backgroundColor = config.popViewBackgroundColor
         }
         
         // 如果圆角修改了
@@ -154,6 +154,10 @@ extension YLLoadingPopView {
         // 如果提示语行数修改了
         if tipsLab.numberOfLines != config.textNumberOfLines {
             tipsLab.numberOfLines = config.textNumberOfLines
+        }
+        // 如果点击效果与保存的配置不相等
+        if isUserInteractionEnabled != !config.backViewStopClick {
+            isUserInteractionEnabled = !config.backViewStopClick
         }
     }
     
@@ -314,15 +318,15 @@ extension YLLoadingPopView {
         return false
     }
     
-    // 传递点击事件
-    public override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        // 如果需要蒙层就不让传递下去
-        if config.backViewHaveMask {
-            return false
-        }
-        // 其他状态允许
-        return true
-    }
+//    // 传递点击事件
+//    public override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+//        // 如果需要蒙层就不让传递下去
+//        if config.backViewHaveMask {
+//            return false
+//        }
+//        // 其他状态允许
+//        return true
+//    }
 }
 
 //MARK: - 出现与消失
